@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Json Stats</h1>
+<div th:if="${events}">
+    <h4>Events Stats</h4>
+    <p th:text="${events}"/>
+
+    <h4>Words Stats</h4>
+    <p th:text="${words}"/>
+</div>
+
+<div th:if="${error}">
+    <h4>Error Message</h4>
+    <p th:text="${error}"/>
+</div>
+
+<div>
+    <button type="button" onclick="window.history.go(-1);">Back</button>
+</div>
+
+</body>
+</html>
